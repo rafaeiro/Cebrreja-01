@@ -478,4 +478,147 @@ input:checked[type="checkbox"]{background-color: rgba(128, 255, 0, 0.555);}
             padding-left: 4vw;
             padding-top: 45vh;
     }
+    .explication {
+        column-count: 1;
+        width: 80vw;
+        margin: auto;
+        font-size: 1.12em;
+        line-height: 1.35em;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 767px) {
+    #pesos {
+        height: 70vh;
+        display: flex;
+        padding-top: 5vh;
+        align-content: space-around;
+        
+    }
+    .conteiner {
+        padding: .5em;
+        height: 180px; 
+        margin: auto;
+    }
+    .altura {
+        display: block;
+        height: 210px;
+    }
+    .ceb-23 {
+        width: 204px;
+        background: url(../imagens/0.5x/BR-23.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-23:hover {
+        background: url(../imagens/0.5x/BR-24.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .s23::after {
+        content: attr(data-content);
+        position: absolute;
+        transform: translate(-16vw);
+        padding-top: 230px;}
+    .ceb-33 {
+        width: 160px;
+        background: url(../imagens/0.5x/BR-33.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-33:hover {
+        background: url(../imagens/0.5x/BR-34.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .s33::after {
+        content: attr(data-content);
+        position: absolute;
+        transform: translate(-13vw);
+        padding-top: 230px;}
+    .ceb-43 {
+        width: 120px;
+        background: url(../imagens/0.5x/BR-43.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-43:hover {
+        background: url(../imagens/0.5x/BR-44.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .s43::after {
+        content: attr(data-content);
+        position: absolute;
+        transform: translate(-7.8vw);
+        padding-top: 230px;}
+    .ceb-53 {
+        width: 68px;
+        background: url(../imagens/0.5x/BR-53.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-53:hover {
+        background: url(../imagens/0.5x/BR-54.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .s53::after {
+        content: attr(data-content);
+        position: absolute;
+        transform: translate(-7.8vw);
+        padding-top: 230px;}
+    .ceb-63 {
+        width: 50px;
+        background: url(../imagens/0.5x/BR-63.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-63:hover {
+        background: url(../imagens/0.5x/BR-64.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    
+    .s63::after {
+        content: attr(data-content);
+        position: absolute;
+        transform: translate(-7.8vw);
+        padding-top: 230px;}
+    .ceb-73 {
+        width: 48px;
+        background: url(../imagens/0.5x/BR-73.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-73:hover {
+        background: url(../imagens/0.5x/BR-74.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .s73::after {
+        content: attr(data-content);
+        position: absolute;
+        transform: translate(-7.8vw);
+        padding-top: 230px;}
+    .ceb-83 {
+        width: 45px;
+        background: url(../imagens/0.5x/BR-83.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-83:hover {
+        background: url(../imagens/0.5x/BR-84.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .s83::after {
+        content: attr(data-content);
+        position: absolute;
+        transform: translate(-6.8vw);
+        padding-top: 230px;}
+    #botao {
+            display: none;
+    }
+    .explication {
+        column-count: 1;
+        width: 80vw;
+        margin: auto;
+        font-size: 1.12em;
+        line-height: 1.35em;
+        text-align: justify;
+    }
 }
