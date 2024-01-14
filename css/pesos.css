@@ -1,3 +1,9 @@
+@charset "UTF-8";
+
+:root{
+    --corfundo: rgb(10, 223, 152);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,9 +11,9 @@
 }
 h1 {text-align: center;}
 #pesos {
-    height: 90vh;
+    height: 68vh;
     position: relative;
-    background-color: rgb(10, 223, 152);
+    background-color: var(--corfundo);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -25,7 +31,7 @@ h1 {text-align: center;}
 }
 .altura {
     display: block;
-    height: 65vh;
+    height: 38vh;
 }
 .ceb-23 {
     width: 409px;
@@ -137,7 +143,7 @@ h1 {text-align: center;}
 #botao {
     position: absolute;
     padding-left: 10vw;
-    padding-top: 76vh;
+    padding-top: 54vh;
 }
 
 input[type="checkbox"]{
@@ -173,3 +179,197 @@ input[type="checkbox"]:hover::before{
 }
 input:checked[type="checkbox"]::before{left: 20px;}
 input:checked[type="checkbox"]{background-color: rgba(128, 255, 0, 0.555);}
+
+#descrition{ background-color: var(--corfundo); padding-bottom: 6vh;}
+.explication {
+    width: 76vw;
+    margin: auto;
+    font-size: 1.12em;
+    line-height: 1.35em;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    #pesos {
+        height: 65vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 5vh;
+    }
+    .conteiner {
+        padding: .65em;
+        height: 200px; 
+    }
+    .altura {
+        display: block;
+        height: 220px;
+    }
+    .ceb-23 {
+        width: 286px;
+        background: url(../imagens/0.7x/BR-23.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-23:hover {
+        background: url(../imagens/0.7x/BR-24.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-33 {
+        width: 173px;
+        background: url(../imagens/0.7x/BR-33.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-33:hover {
+        background: url(../imagens/0.7x/BR-34.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-43 {
+        width: 117px;
+        background: url(../imagens/0.7x/BR-43.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-43:hover {
+        background: url(../imagens/0.7x/BR-44.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-53 {
+        width: 90px;
+        background: url(../imagens/0.7x/BR-53.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-53:hover {
+        background: url(../imagens/0.7x/BR-54.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-63 {
+        width: 67px;
+        background: url(../imagens/0.7x/BR-63.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-63:hover {
+        background: url(../imagens/0.7x/BR-64.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-73 {
+        width: 60px;
+        background: url(../imagens/0.7x/BR-73.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-73:hover {
+        background: url(../imagens/0.7x/BR-74.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-83 {
+        width: 54px;
+        background: url(../imagens/0.7x/BR-83.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-83:hover {
+        background: url(../imagens/0.7x/BR-84.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    #botao {
+            position: absolute;
+            padding-left: 4vw;
+            padding-top: 46vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #pesos {
+        height: 40vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 5vh;
+    }
+    .conteiner {
+        padding: .5em;
+        height: 200px; 
+    }
+    .altura {
+        display: block;
+        height: 210px;
+    }
+    .ceb-23 {
+        width: 204px;
+        background: url(../imagens/0.5x/BR-23.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-23:hover {
+        background: url(../imagens/0.5x/BR-24.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-33 {
+        width: 124px;
+        background: url(../imagens/0.5x/BR-33.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-33:hover {
+        background: url(../imagens/0.5x/BR-34.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-43 {
+        width: 83px;
+        background: url(../imagens/0.5x/BR-43.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-43:hover {
+        background: url(../imagens/0.5x/BR-44.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-53 {
+        width: 68px;
+        background: url(../imagens/0.5x/BR-53.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-53:hover {
+        background: url(../imagens/0.5x/BR-54.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-63 {
+        width: 50px;
+        background: url(../imagens/0.5x/BR-63.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-63:hover {
+        background: url(../imagens/0.5x/BR-64.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-73 {
+        width: 48px;
+        background: url(../imagens/0.5x/BR-73.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-73:hover {
+        background: url(../imagens/0.5x/BR-74.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-83 {
+        width: 45px;
+        background: url(../imagens/0.5x/BR-83.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-83:hover {
+        background: url(../imagens/0.5x/BR-84.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    #botao {
+            position: absolute;
+            padding-left: 4vw;
+            padding-top: 45vh;
+    }
+}
