@@ -143,7 +143,7 @@ h1 {text-align: center;}
 #botao {
     position: absolute;
     padding-left: 10vw;
-    padding-top: 54vh;
+    padding-top: 70vh;
 }
 
 input[type="checkbox"]{
@@ -180,7 +180,7 @@ input[type="checkbox"]:hover::before{
 input:checked[type="checkbox"]::before{left: 20px;}
 input:checked[type="checkbox"]{background-color: rgba(128, 255, 0, 0.555);}
 
-#descrition{ background-color: var(--corfundo); padding-bottom: 6vh;}
+#descrition{ background-color: var(--corfundo);padding-top: 60px; padding-bottom: 6vh;}
 .explication {
     width: 76vw;
     margin: auto;
