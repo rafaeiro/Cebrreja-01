@@ -31,7 +31,7 @@ h1 {text-align: center;}
 }
 .altura {
     display: block;
-    height: 38vh;
+    height: 368px;
 }
 .ceb-23 {
     width: 409px;
@@ -202,7 +202,7 @@ input:checked[type="checkbox"]{background-color: rgba(128, 255, 0, 0.555);}
     }
     .altura {
         display: block;
-        height: 220px;
+        height: 300px;
     }
     .ceb-23 {
         width: 286px;
