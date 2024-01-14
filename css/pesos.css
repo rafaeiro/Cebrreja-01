@@ -18,6 +18,7 @@ h1 {text-align: center;}
     flex-wrap: wrap;
     flex-direction: row;
     padding-top: 10vh;
+    
 }
 
 .conteiner {
@@ -25,8 +26,7 @@ h1 {text-align: center;}
     padding: 1em;
     height: 300px; 
     text-align: center;
-    vertical-align: baseline;   
-    text-align: center;
+    align-items: flex-start; 
     bottom: 0px;
 }
 .altura {
@@ -34,7 +34,7 @@ h1 {text-align: center;}
     height: 368px;
 }
 .ceb-23 {
-    width: 409px;
+    width: 346px;
     flex-grow: .2;
     flex-shrink: 1;
     background: url(../imagens/BR-23.png) ;
@@ -46,11 +46,13 @@ h1 {text-align: center;}
     background-repeat: no-repeat;
     background-position: bottom center;
 }
-.ceb-23::after { content: "Cebrreja 23 Extra Light Wide";}
-.ceb-23:hover::after { content: "Cebrreja 24 Extra Light Italic Wide";}
-
+.s23::after {
+    content: attr(data-content);
+    position: absolute;
+    transform: translate(-10vw);
+    padding-top: 368px;}
 .ceb-33 {
-    width: 248px;
+    width: 246px;
     flex-grow: .2;
     flex-shrink: 1;
     background: url(../imagens/BR-33.png) ;
@@ -62,10 +64,14 @@ h1 {text-align: center;}
     background-repeat: no-repeat;
     background-position: bottom center;
 }
-.ceb-33::after {content: "Cebrreja 33 Light  Wide";}
-.ceb-33:hover::after { content: "Cebrreja 34 Light Italic Wd";}
+.s33::after {
+    content: attr(data-content);
+    position: absolute;
+    transform: translate(-7vw);
+    padding-top: 368px;}
+
 .ceb-43 {
-    width: 128px;
+    width: 148px;
     flex-grow: .2;
     flex-shrink: 1;
     background: url(../imagens/BR-43.png) ;
@@ -77,10 +83,13 @@ h1 {text-align: center;}
     background-repeat: no-repeat;
     background-position: bottom center;
 }
-.ceb-43::after { content: "Cebrreja 43 Wide";}
-.ceb-43:hover::after { content: "Cebrreja 44 ItWd";}
+.s43::after {
+    content: attr(data-content);
+    position: absolute;
+    transform: translate(-5.5vw);
+    padding-top: 368px;}
 .ceb-53 {
-    width: 101px;
+    width: 97px;
     flex-grow: .2;
     flex-shrink: 1;
     background: url(../imagens/BR-53.png) ;
@@ -92,10 +101,13 @@ h1 {text-align: center;}
     background-repeat: no-repeat;
     background-position: bottom center;
 }
-.ceb-53::after { content: "Cebrreja 53 Medium Wide";}
-.ceb-53:hover::after { content: "Cebrreja 54 Medium ItWd";}
+.s53::after {
+    content: attr(data-content);
+    position: absolute;
+    transform: translate(-5.5vw);
+    padding-top: 368px;}
 .ceb-63 {
-    width: 78px;
+    width: 64px;
     flex-grow: .2;
     flex-shrink: 1;
     background: url(../imagens/BR-63.png) ;
@@ -107,10 +119,13 @@ h1 {text-align: center;}
     background-repeat: no-repeat;
     background-position: bottom center;
 }
-.ceb-63::after {content: "Cebrreja 63 Bold Wide";}
-.ceb-63:hover::after { content: "Cebrreja 64 Bold ItWd";}
+.s63::after {
+    content: attr(data-content);
+    position: absolute;
+    transform: translate(-4.1vw);
+    padding-top: 368px;}
 .ceb-73 {
-    width: 62px;
+    width: 47px;
     flex-grow: .2;
     flex-shrink: 1;
     background: url(../imagens/BR-73.png) ;
@@ -122,10 +137,13 @@ h1 {text-align: center;}
     background-repeat: no-repeat;
     background-position: bottom center;
 }
-.ceb-73::after { content: "Cebrreja 73 Heavy Wide";}
-.ceb-73:hover::after { content: "Cebrreja 74 Heavy ItWd";}
+.s73::after {
+    content: attr(data-content);
+    position: absolute;
+    transform: translate(-3.0vw);
+    padding-top: 368px;}
 .ceb-83 {
-    width: 53px;
+    width: 47px;
     flex-grow: .2;
     flex-shrink: 1;
     background: url(../imagens/BR-83.png) ;
@@ -137,13 +155,16 @@ h1 {text-align: center;}
     background-repeat: no-repeat;
     background-position: bottom center;
 }
-.ceb-83::after { content: "Cebrreja 83 Black Wide";}
-.ceb-83:hover::after { content: "Cebrreja 84 Black ItWd";}
+.s83::after {
+    content: attr(data-content);
+    position: absolute;
+    transform: translate(-2.1vw);
+    padding-top: 368px;}
 
 #botao {
     position: absolute;
     padding-left: 10vw;
-    padding-top: 70vh;
+    padding-top: 445px;
 }
 
 input[type="checkbox"]{
@@ -182,28 +203,113 @@ input:checked[type="checkbox"]{background-color: rgba(128, 255, 0, 0.555);}
 
 #descrition{ background-color: var(--corfundo);padding-top: 60px; padding-bottom: 6vh;}
 .explication {
-    width: 76vw;
+    column-count: 2;
+    column-gap: 2.8em;
+    width: 64vw;
     margin: auto;
     font-size: 1.12em;
     line-height: 1.35em;
+    text-align: justify;
 }
+@media screen and (min-width: 1600px){
+    #pesos {
+        height: 35vh;
+        display: flex;
+        padding-top: 8vh;
+    }
+    .altura {
+        display: block;
+        height: 340px; }
+        .ceb-23 {
+        width: 396px;
+        background: url(../imagens/1.2x/BR-23.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-23:hover {
+        background: url(../imagens/1.2x/BR-24.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-33 {
+        width: 240px;
+        background: url(../imagens/1.2x/BR-33.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-33:hover {
+        background: url(../imagens/1.2x/BR-34.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-43 {
+        width: 177px;
+        background: url(../imagens/1.2x/BR-43.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-43:hover {
+        background: url(../imagens/1.2x/BR-44.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-53 {
+        width: 110px;
+        background: url(../imagens/1.2x/BR-53.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-53:hover {
+        background: url(../imagens/1.2x/BR-54.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-63 {
+        width: 67px;
+        background: url(../imagens/1.2x/BR-63.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-63:hover {
+        background: url(../imagens/1.2x/BR-64.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-73 {
+        width: 60px;
+        background: url(../imagens/1.2x/BR-73.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-73:hover {
+        background: url(../imagens/1.2x/BR-74.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-83 {
+        width: 54px;
+        background: url(../imagens/1.2x/BR-83.png);
+        flex-shrink: 1;
+        background-repeat: no-repeat;
+        background-position: bottom center;}
+    .ceb-83:hover {
+        background: url(../imagens/1.2x/BR-84.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;}
 
+    #botao {
+        position: absolute;
+        padding-left: 6vw;
+        padding-top: 35vh;
+    }
+}
 @media screen and (min-width: 993px) and (max-width: 1200px) {
     #pesos {
         height: 65vh;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding-top: 5vh;
-    }
+        padding-top: 5vh; }
     .conteiner {
         padding: .65em;
-        height: 200px; 
-    }
+        height: 200px; }
     .altura {
         display: block;
-        height: 300px;
-    }
+        height: 300px;    }
     .ceb-23 {
         width: 286px;
         background: url(../imagens/0.7x/BR-23.png);
